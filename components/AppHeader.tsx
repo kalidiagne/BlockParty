@@ -2,7 +2,6 @@ import Link from "next/link";
 import { AppButton } from "../elements/AppButton";
 import { InjectedConnector } from "wagmi/connectors/injected";
 import { useAccount, useConnect, useDisconnect, chain } from "wagmi";
-import networks from "@unlock-protocol/networks";
 
 const menus: { label: string; path: string }[] = [
   {
@@ -16,10 +15,6 @@ const menus: { label: string; path: string }[] = [
   {
     label: "Governance",
     path: "/governance",
-  },
-  {
-    label: "About",
-    path: "/about",
   },
 ];
 
